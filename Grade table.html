@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grade</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        nav ul {
+            background-color: palevioletred;
+            display: flex;
+            list-style: none;
+            padding: 18px;
+            box-shadow: 1px 1px 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        nav a:active {
+            color: maroon;
+        }
+
+        nav a:focus {
+            color: black;
+        }
+
+
+
+        .container {
+            width: 85%;
+            max-width: 450px;
+            margin: 50px auto;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.40);
+            border-radius: 18px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+            line-height: 50px;
+            font-size: 22px;
+        }
+
+
+        table {
+            width: 100%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0px 2px 5px;
+            font-size: 14px;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            border: 1px solid black;
+        }
+
+
+        @media (max-width: 600px) {
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li a {
+                width: 100%;
+                margin: 5px;
+                font-size: 14px;
+                padding: 8px 15px;
+                text-align: center;
+            }
+
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            table th,
+            table td {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="Course.html">Course</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="Grade table.html">Grade Table</a></li>
+            <li><a href="Contact us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <h1>My Grade</h1>
+
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Grade</th>
+                <th>Credits</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>A+</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>A+</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>B+</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>B+</td>
+                <td>55</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

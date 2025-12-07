@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0%;
+        }
+
+
+        nav {
+            background-color: #ff94b7;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 1px 1px 15px;
+        }
+
+        nav a {
+            margin: 60px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+
+        .profile-container {
+            max-width: 900px;
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 100px;
+            box-shadow: 1px 0px 8px lightgray;
+        }
+
+        .profile-container img {
+            display: flex;
+            margin: auto;
+            border-radius: 39%;
+            border: 7px solid #ffb6d9;
+        }
+
+        h2,
+        h3 {
+            color: #d63384;
+
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+
+        .goal-box {
+            background: #ffe3ee;
+            padding: 10px;
+
+            border-left: 6px solid #d63384;
+            border-right: 6px solid #d63384;
+            border-radius: 100px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 8px 0;
+                font-size: 16px;
+            }
+
+            .profile-container {
+                width: 90%;
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+            .profile-container img {
+                width: 200px;
+                /* height: 150px; */
+                border-radius: 50%;
+            }
+
+            h2 {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            ul {
+                padding-left: 10px;
+                font-size: 16px;
+            }
+
+            .goal-box {
+                font-size: 18px;
+                padding: 32px;
+                border-radius: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Profile.html">Profile</a>
+        <a href="Course.html">Course</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="Grade table.html">Grade Table</a>
+        <a href="Contact us.html">Contact Us</a>
+    </nav>
+
+    <div class="profile-container">
+
+        <img src="profile.png" width="200" height="200">
+
+        <h2>Personal Details</h2>
+        <ul>
+            <li><b>Name:</b> Sakshi Kumari</li>
+            <li><b>Age:</b> 20</li>
+            <li><b>Date of Birth:</b> 12/04/2004</li>
+            <li><b>Gender:</b> Female</li>
+            <li><b>Languages:</b> Hindi, English</li>
+            <li><b>Nationality:</b> Indian</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Exploring new places</li>
+            <li>Interacting with new people</li>
+            <li>Learning about different cultures</li>
+        </ul>
+
+        <h3>Goal</h3>
+        <div class="goal-box">
+            My goal is to learn modern web development technologies
+            like HTML, CSS, JavaScript and build professional projects.
+            I want to improve my skills and create useful, real-world
+            solutions through my work.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

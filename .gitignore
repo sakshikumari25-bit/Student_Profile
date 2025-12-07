@@ -1,0 +1,15 @@
+### Ignore common binary image files to avoid large initial pushes
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Optional: ignore local IDE files
+.vscode/
